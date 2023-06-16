@@ -10,4 +10,4 @@ The Player and Recorder View themselves use the
 ```.averagePower()```
 modifier to get the power input from the voice channel and use those to visualize a waveform of the audio.
 
-<img src="/ReadMeGIF.gif" width="142.5" height="300">
+![Simulator Screen Recording - iPhone 14 Pro - 2023-06-16 at 06 21 52](https://github.com/devdchaudhary/VoiceRecorder/assets/52855516/6d6f853a-d34f-4afb-87a1-10c9539f00c2)
