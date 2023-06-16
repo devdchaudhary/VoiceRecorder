@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60DAD6C2A37EFE1000E097E /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DAD6B2A37EFE1000E097E /* ToastView.swift */; };
+		B60DAD6F2A37F0B6000E097E /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = B60DAD6E2A37F0B6000E097E /* Toast */; };
+		B61DA97C2A0C80F400E1804B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61DA97B2A0C80F400E1804B /* Color.swift */; };
+		B61DA97F2A0C88CC00E1804B /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61DA97E2A0C88CC00E1804B /* AudioPlayerView.swift */; };
 		B69EFFDC29FB138800C9FCA9 /* CustomAudioRecorderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EFFDB29FB138800C9FCA9 /* CustomAudioRecorderApp.swift */; };
-		B69EFFDE29FB138800C9FCA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EFFDD29FB138800C9FCA9 /* ContentView.swift */; };
+		B69EFFDE29FB138800C9FCA9 /* AudioRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EFFDD29FB138800C9FCA9 /* AudioRecorderView.swift */; };
 		B69EFFE029FB138A00C9FCA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69EFFDF29FB138A00C9FCA9 /* Assets.xcassets */; };
 		B69EFFE329FB138A00C9FCA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69EFFE229FB138A00C9FCA9 /* Preview Assets.xcassets */; };
+		B69EFFED29FB13B300C9FCA9 /* RecordingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EFFEA29FB13B300C9FCA9 /* RecordingModel.swift */; };
+		B69EFFEE29FB13B300C9FCA9 /* SpeechRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EFFEB29FB13B300C9FCA9 /* SpeechRecorder.swift */; };
+		B69EFFEF29FB13B300C9FCA9 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EFFEC29FB13B300C9FCA9 /* AudioPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B60DAD6B2A37EFE1000E097E /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		B61DA97B2A0C80F400E1804B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B61DA97E2A0C88CC00E1804B /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
 		B69EFFD829FB138800C9FCA9 /* CustomAudioRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomAudioRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B69EFFDB29FB138800C9FCA9 /* CustomAudioRecorderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAudioRecorderApp.swift; sourceTree = "<group>"; };
-		B69EFFDD29FB138800C9FCA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B69EFFDD29FB138800C9FCA9 /* AudioRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderView.swift; sourceTree = "<group>"; };
 		B69EFFDF29FB138A00C9FCA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B69EFFE229FB138A00C9FCA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B69EFFEA29FB13B300C9FCA9 /* RecordingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingModel.swift; sourceTree = "<group>"; };
+		B69EFFEB29FB13B300C9FCA9 /* SpeechRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecorder.swift; sourceTree = "<group>"; };
+		B69EFFEC29FB13B300C9FCA9 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		B6BDB0E12A390831001B6A4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,15 +40,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B60DAD6F2A37F0B6000E097E /* Toast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B60DAD732A37F6D8000E097E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B60DAD6B2A37EFE1000E097E /* ToastView.swift */,
+				B61DA97E2A0C88CC00E1804B /* AudioPlayerView.swift */,
+				B69EFFDD29FB138800C9FCA9 /* AudioRecorderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B61DA97D2A0C88A400E1804B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B69EFFEC29FB13B300C9FCA9 /* AudioPlayer.swift */,
+				B69EFFEB29FB13B300C9FCA9 /* SpeechRecorder.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		B69EFFCF29FB138800C9FCA9 = {
 			isa = PBXGroup;
 			children = (
+				B6BDB0E12A390831001B6A4A /* README.md */,
 				B69EFFDA29FB138800C9FCA9 /* CustomAudioRecorder */,
 				B69EFFD929FB138800C9FCA9 /* Products */,
 			);
@@ -52,7 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				B69EFFDB29FB138800C9FCA9 /* CustomAudioRecorderApp.swift */,
-				B69EFFDD29FB138800C9FCA9 /* ContentView.swift */,
+				B61DA97B2A0C80F400E1804B /* Color.swift */,
+				B69EFFE929FB13B300C9FCA9 /* Model */,
+				B61DA97D2A0C88A400E1804B /* ViewModel */,
+				B60DAD732A37F6D8000E097E /* Views */,
 				B69EFFDF29FB138A00C9FCA9 /* Assets.xcassets */,
 				B69EFFE129FB138A00C9FCA9 /* Preview Content */,
 			);
@@ -65,6 +103,14 @@
 				B69EFFE229FB138A00C9FCA9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B69EFFE929FB13B300C9FCA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B69EFFEA29FB13B300C9FCA9 /* RecordingModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +129,9 @@
 			dependencies = (
 			);
 			name = CustomAudioRecorder;
+			packageProductDependencies = (
+				B60DAD6E2A37F0B6000E097E /* Toast */,
+			);
 			productName = CustomAudioRecorder;
 			productReference = B69EFFD829FB138800C9FCA9 /* CustomAudioRecorder.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +160,9 @@
 				Base,
 			);
 			mainGroup = B69EFFCF29FB138800C9FCA9;
+			packageReferences = (
+				B60DAD6D2A37F0B6000E097E /* XCRemoteSwiftPackageReference "toast-swift" */,
+			);
 			productRefGroup = B69EFFD929FB138800C9FCA9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B69EFFDE29FB138800C9FCA9 /* ContentView.swift in Sources */,
+				B60DAD6C2A37EFE1000E097E /* ToastView.swift in Sources */,
+				B61DA97F2A0C88CC00E1804B /* AudioPlayerView.swift in Sources */,
+				B69EFFDE29FB138800C9FCA9 /* AudioRecorderView.swift in Sources */,
+				B69EFFEE29FB13B300C9FCA9 /* SpeechRecorder.swift in Sources */,
+				B69EFFEF29FB13B300C9FCA9 /* AudioPlayer.swift in Sources */,
 				B69EFFDC29FB138800C9FCA9 /* CustomAudioRecorderApp.swift in Sources */,
+				B69EFFED29FB13B300C9FCA9 /* RecordingModel.swift in Sources */,
+				B61DA97C2A0C80F400E1804B /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,20 +327,28 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CustomAudioRecorder/Preview Content\"";
 				DEVELOPMENT_TEAM = AFU28XCKKE;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please give access to allow you to record into the mic.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lame-3.99.5",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.practice.audio.CustomAudioRecorder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.audio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,20 +364,28 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CustomAudioRecorder/Preview Content\"";
 				DEVELOPMENT_TEAM = AFU28XCKKE;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please give access to allow you to record into the mic.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lame-3.99.5",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.practice.audio.CustomAudioRecorder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.audio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -339,6 +413,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B60DAD6D2A37F0B6000E097E /* XCRemoteSwiftPackageReference "toast-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/BastiaanJansen/toast-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B60DAD6E2A37F0B6000E097E /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B60DAD6D2A37F0B6000E097E /* XCRemoteSwiftPackageReference "toast-swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B69EFFD029FB138800C9FCA9 /* Project object */;
 }
