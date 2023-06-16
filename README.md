@@ -10,4 +10,4 @@ The Player and Recorder View themselves use the
 ```.averagePower()```
 modifier to get the power input from the voice channel and use those to visualize a waveform of the audio.
 
-https://github.com/devdchaudhary/SwiftUIWebView/assets/52855516/7a340312-050c-4439-a95e-7a90efb4a2ad
+<img src="/ReadMeGIF.gif" width="142.5" height="300">
