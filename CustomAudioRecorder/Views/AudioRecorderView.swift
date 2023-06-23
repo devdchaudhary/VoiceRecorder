@@ -188,7 +188,6 @@ struct AudioRecorderView: View {
                         .onLongPressGesture(perform: {}) { isPressing in
                             
                             if isPressing {
-                                player.playSystemSound(soundID: 1306)
                                 timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in
                                     withAnimation {
                                         holdingTime += 1
