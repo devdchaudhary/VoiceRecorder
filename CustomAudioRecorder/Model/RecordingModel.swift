@@ -30,3 +30,15 @@ struct SampleModel: Hashable {
     }
     
 }
+
+struct RecordingSampleModel: Hashable {
+    
+    let id: UUID
+    var sample: Int
+    
+    init(sample: Int) {
+        id = UUID()
+        self.sample = sample
+    }
+    
+}

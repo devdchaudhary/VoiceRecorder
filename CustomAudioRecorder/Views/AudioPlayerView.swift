@@ -92,16 +92,6 @@ struct AudioPlayerView: View {
             
         }
     }
-    
-    private func playAudio() {
-        audioPlayer.playSystemSound(soundID: 1306)
-        audioPlayer.startPlayback(audio: audioUrl)
-    }
-    
-    private func stopPlaying() {
-        audioPlayer.stopPlayback()
-    }
-    
 }
 
 struct AudioPlayerView_Previews: PreviewProvider {

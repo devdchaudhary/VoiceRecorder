@@ -25,13 +25,15 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     var currentTime: Int = 0
     
     @Published var soundSamples: [SampleModel] = []
-    
+        
     init(isPlaying: Bool = false, audioPlayer: AVAudioPlayer = AVAudioPlayer(), timer: Timer? = nil, numberOfSamples: Int) {
         self.isPlaying = isPlaying
         self.audioPlayer = audioPlayer
         self.timer = timer
         self.numberOfSamples = numberOfSamples
     }
+    
+    static let shared = AudioPlayer(numberOfSamples: 15)
     
     func playSystemSound(soundID: SystemSoundID) {
         AudioServicesPlaySystemSound(soundID)

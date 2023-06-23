@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B60DAD6C2A37EFE1000E097E /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60DAD6B2A37EFE1000E097E /* ToastView.swift */; };
-		B60DAD6F2A37F0B6000E097E /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = B60DAD6E2A37F0B6000E097E /* Toast */; };
 		B61DA97C2A0C80F400E1804B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61DA97B2A0C80F400E1804B /* Color.swift */; };
 		B61DA97F2A0C88CC00E1804B /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61DA97E2A0C88CC00E1804B /* AudioPlayerView.swift */; };
 		B691FF992A3BEBEE007D3D00 /* ReadmeGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = B691FF982A3BEBEE007D3D00 /* ReadmeGIF.gif */; };
@@ -19,6 +18,8 @@
 		B69EFFED29FB13B300C9FCA9 /* RecordingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EFFEA29FB13B300C9FCA9 /* RecordingModel.swift */; };
 		B69EFFEE29FB13B300C9FCA9 /* SpeechRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EFFEB29FB13B300C9FCA9 /* SpeechRecorder.swift */; };
 		B69EFFEF29FB13B300C9FCA9 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EFFEC29FB13B300C9FCA9 /* AudioPlayer.swift */; };
+		B6FB51C02A455261004A9665 /* AudioPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB51BF2A455261004A9665 /* AudioPlayerViewModel.swift */; };
+		B6FB51C52A455314004A9665 /* Drops in Frameworks */ = {isa = PBXBuildFile; productRef = B6FB51C42A455314004A9665 /* Drops */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		B69EFFEB29FB13B300C9FCA9 /* SpeechRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecorder.swift; sourceTree = "<group>"; };
 		B69EFFEC29FB13B300C9FCA9 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		B6BDB0E12A390831001B6A4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B6FB51BF2A455261004A9665 /* AudioPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60DAD6F2A37F0B6000E097E /* Toast in Frameworks */,
+				B6FB51C52A455314004A9665 /* Drops in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +64,7 @@
 		B61DA97D2A0C88A400E1804B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				B69EFFEC29FB13B300C9FCA9 /* AudioPlayer.swift */,
-				B69EFFEB29FB13B300C9FCA9 /* SpeechRecorder.swift */,
+				B6FB51BF2A455261004A9665 /* AudioPlayerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -90,6 +91,8 @@
 			children = (
 				B69EFFDB29FB138800C9FCA9 /* VoiceRecorderApp.swift */,
 				B61DA97B2A0C80F400E1804B /* Color.swift */,
+				B69EFFEC29FB13B300C9FCA9 /* AudioPlayer.swift */,
+				B69EFFEB29FB13B300C9FCA9 /* SpeechRecorder.swift */,
 				B69EFFE929FB13B300C9FCA9 /* Model */,
 				B61DA97D2A0C88A400E1804B /* ViewModel */,
 				B60DAD732A37F6D8000E097E /* Views */,
@@ -133,7 +136,7 @@
 			);
 			name = VoiceRecorder;
 			packageProductDependencies = (
-				B60DAD6E2A37F0B6000E097E /* Toast */,
+				B6FB51C42A455314004A9665 /* Drops */,
 			);
 			productName = CustomAudioRecorder;
 			productReference = B69EFFD829FB138800C9FCA9 /* VoiceRecorder.app */;
@@ -164,7 +167,7 @@
 			);
 			mainGroup = B69EFFCF29FB138800C9FCA9;
 			packageReferences = (
-				B60DAD6D2A37F0B6000E097E /* XCRemoteSwiftPackageReference "toast-swift" */,
+				B6FB51C32A455314004A9665 /* XCRemoteSwiftPackageReference "Drops" */,
 			);
 			productRefGroup = B69EFFD929FB138800C9FCA9 /* Products */;
 			projectDirPath = "";
@@ -200,6 +203,7 @@
 				B69EFFEF29FB13B300C9FCA9 /* AudioPlayer.swift in Sources */,
 				B69EFFDC29FB138800C9FCA9 /* VoiceRecorderApp.swift in Sources */,
 				B69EFFED29FB13B300C9FCA9 /* RecordingModel.swift in Sources */,
+				B6FB51C02A455261004A9665 /* AudioPlayerViewModel.swift in Sources */,
 				B61DA97C2A0C80F400E1804B /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,9 +423,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B60DAD6D2A37F0B6000E097E /* XCRemoteSwiftPackageReference "toast-swift" */ = {
+		B6FB51C32A455314004A9665 /* XCRemoteSwiftPackageReference "Drops" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/BastiaanJansen/toast-swift";
+			repositoryURL = "https://github.com/omaralbeik/Drops.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
@@ -430,10 +434,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B60DAD6E2A37F0B6000E097E /* Toast */ = {
+		B6FB51C42A455314004A9665 /* Drops */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B60DAD6D2A37F0B6000E097E /* XCRemoteSwiftPackageReference "toast-swift" */;
-			productName = Toast;
+			package = B6FB51C32A455314004A9665 /* XCRemoteSwiftPackageReference "Drops" */;
+			productName = Drops;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -11,9 +11,9 @@ import AVFoundation
 class AudioRecorder: NSObject, ObservableObject {
         
     @Published var recording = false
-    @Published public var soundSamples: [Float]
+    @Published public var soundSamples: [RecordingSampleModel]
     
-    private var currentSample: Int
+    private var currentSample: RecordingSampleModel = .init(sample: .zero)
     private let numberOfSamples: Int
 
     private var timer: Timer?
@@ -21,10 +21,12 @@ class AudioRecorder: NSObject, ObservableObject {
     var audioRecorder = AVAudioRecorder()
     
     init(numberOfSamples: Int) {
-        self.soundSamples = [Float](repeating: .zero, count: numberOfSamples)
-        self.currentSample = 0
+        self.soundSamples = [RecordingSampleModel](repeating: .init(sample: .zero), count: numberOfSamples)
+        self.currentSample = .init(sample: .zero)
         self.numberOfSamples = numberOfSamples
     }
+    
+    static let shared = AudioRecorder(numberOfSamples: 12)
     
     func startRecording() {
                 
@@ -85,8 +87,8 @@ class AudioRecorder: NSObject, ObservableObject {
             guard let this = self else { return }
             
             this.audioRecorder.updateMeters()
-            this.soundSamples[this.currentSample] = this.audioRecorder.averagePower(forChannel: 0)
-            this.currentSample = (this.currentSample + 1) % this.numberOfSamples
+            this.soundSamples[this.currentSample.sample] = RecordingSampleModel(sample: Int(this.audioRecorder.averagePower(forChannel: 0)))
+            this.currentSample.sample = (this.currentSample.sample + 1) % this.numberOfSamples
         })
     }
     

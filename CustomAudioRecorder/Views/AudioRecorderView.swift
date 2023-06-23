@@ -21,8 +21,8 @@ struct RecordingBarView: View {
 
 struct AudioRecorderView: View {
     
-    @StateObject private var audioRecorder = AudioRecorder(numberOfSamples: 12)
-    @StateObject private var player = AudioPlayer(numberOfSamples: 15)
+    @StateObject private var audioRecorder: AudioRecorder = AudioRecorder.shared
+    @StateObject private var player: AudioPlayer = AudioPlayer.shared
     
     @GestureState private var dragState: CGSize = .zero
     
@@ -158,6 +158,7 @@ struct AudioRecorderView: View {
                         }
                         .buttonStyle(.plain)
                         .padding(.leading, 5)
+                        .padding(.vertical, 8)
                         .simultaneousGesture(
                             LongPressGesture(minimumDuration: 3)
                                 .sequenced(before: DragGesture())
@@ -191,7 +192,7 @@ struct AudioRecorderView: View {
                                 timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in
                                     withAnimation {
                                         holdingTime += 1
-                                        if holdingTime == 2 {
+                                        if holdingTime == 3 {
                                             withAnimation {
                                                 startRecording()
                                             }
@@ -201,11 +202,11 @@ struct AudioRecorderView: View {
                                 
                             } else {
                                 
-                                if holdingTime < 2 {
+                                if holdingTime < 3 {
                                     
                                     holdingTime = 0
                                     timer?.invalidate()
-                                    ToastManager.showWarning("Hold to record", subtitle: "You must hold for atleast 2 seconds")
+                                    ToastManager.showWarning(title: "Hold to record", subtitle: "You must hold for atleast 2 seconds")
                                     return
                                 }
                                 
@@ -241,7 +242,6 @@ struct AudioRecorderView: View {
                                 withAnimation {
                                     stopRecording()
                                 }
-                                
                                 dragValue = nil
                             }
                         }
@@ -316,8 +316,8 @@ struct AudioRecorderView: View {
                         }
                      
                         HStack(spacing: 4) {
-                        ForEach(audioRecorder.soundSamples, id: \.hashValue) { level in
-                                RecordingBarView(value: normalizeSoundLevel(level: level))
+                            ForEach(audioRecorder.soundSamples, id: \.id) { level in
+                                RecordingBarView(value: normalizeSoundLevel(level: Float(level.sample)))
                             }
                         }
                         .padding(.leading)
@@ -356,7 +356,7 @@ struct AudioRecorderView: View {
         let recording = recordings[recordingIndex]
         audioRecorder.deleteRecording(url: recording.fileURL, onSuccess: {
             recordings.remove(at: recordingIndex)
-            ToastManager.showSuccess("Recording removed!")
+            ToastManager.showSuccess(title: "Recording removed!")
         })
         
     }
