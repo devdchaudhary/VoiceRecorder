@@ -18,6 +18,7 @@
 		B69EFFED29FB13B300C9FCA9 /* RecordingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EFFEA29FB13B300C9FCA9 /* RecordingModel.swift */; };
 		B69EFFEE29FB13B300C9FCA9 /* SpeechRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EFFEB29FB13B300C9FCA9 /* SpeechRecorder.swift */; };
 		B69EFFEF29FB13B300C9FCA9 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B69EFFEC29FB13B300C9FCA9 /* AudioPlayer.swift */; };
+		B6EDAD122A5556250025D580 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EDAD112A5556250025D580 /* BarView.swift */; };
 		B6FB51C02A455261004A9665 /* AudioPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FB51BF2A455261004A9665 /* AudioPlayerViewModel.swift */; };
 		B6FB51C52A455314004A9665 /* Drops in Frameworks */ = {isa = PBXBuildFile; productRef = B6FB51C42A455314004A9665 /* Drops */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		B69EFFEB29FB13B300C9FCA9 /* SpeechRecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechRecorder.swift; sourceTree = "<group>"; };
 		B69EFFEC29FB13B300C9FCA9 /* AudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		B6BDB0E12A390831001B6A4A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B6EDAD112A5556250025D580 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 		B6FB51BF2A455261004A9665 /* AudioPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +59,7 @@
 				B60DAD6B2A37EFE1000E097E /* ToastView.swift */,
 				B61DA97E2A0C88CC00E1804B /* AudioPlayerView.swift */,
 				B69EFFDD29FB138800C9FCA9 /* AudioRecorderView.swift */,
+				B6EDAD112A5556250025D580 /* BarView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				B61DA97F2A0C88CC00E1804B /* AudioPlayerView.swift in Sources */,
 				B69EFFDE29FB138800C9FCA9 /* AudioRecorderView.swift in Sources */,
 				B69EFFEE29FB13B300C9FCA9 /* SpeechRecorder.swift in Sources */,
+				B6EDAD122A5556250025D580 /* BarView.swift in Sources */,
 				B69EFFEF29FB13B300C9FCA9 /* AudioPlayer.swift in Sources */,
 				B69EFFDC29FB138800C9FCA9 /* VoiceRecorderApp.swift in Sources */,
 				B69EFFED29FB13B300C9FCA9 /* RecordingModel.swift in Sources */,

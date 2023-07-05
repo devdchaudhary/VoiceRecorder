@@ -7,18 +7,6 @@
 
 import SwiftUI
 
-struct RecordingBarView: View {
-    
-    let numberOfSamples = 12
-    var value: CGFloat
-
-    var body: some View {
-        RoundedRectangle(cornerRadius: 20)
-            .fill(Color.primaryText)
-            .frame(width: 10, height: value)
-    }
-}
-
 struct AudioRecorderView: View {
     
     @StateObject private var audioRecorder: AudioRecorder = AudioRecorder.shared
@@ -316,7 +304,7 @@ struct AudioRecorderView: View {
                      
                         HStack(spacing: 4) {
                             ForEach(audioRecorder.soundSamples, id: \.id) { level in
-                                RecordingBarView(value: normalizeSoundLevel(level: Float(level.sample)))
+                                BarView(isRecording: true, value: normalizeSoundLevel(level: Float(level.sample)), sample: nil)
                             }
                         }
                         .padding(.leading)
